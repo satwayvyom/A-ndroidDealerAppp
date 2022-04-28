@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+       android:id="@+id/Device"
+        android:title="Device"
+        android:icon="@drawable/ic_important_devices_black_24dp"
+        >
+    </item>
+
+    <item
+        android:id="@+id/Settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        >
+    </item>
+
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_settings_black_24dp"
+        >
+    </item>
+
+</menu>

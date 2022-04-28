@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "776017691226",
+    "firebase_url": "https://userregister-880b0.firebaseio.com",
+    "project_id": "userregister-880b0",
+    "storage_bucket": "userregister-880b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776017691226:android:ee5cf7035037a88e410e63",
+        "android_client_info": {
+          "package_name": "com.Satway.gpstracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776017691226-9mr6mcfc943sditti9por493c761s7l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvcWO6gQ0BEObP8M_lvDD0rzMaWLa2bxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776017691226-9mr6mcfc943sditti9por493c761s7l8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".reciept">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="295dp"
+            android:layout_height="133dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/ticlk" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Payment Sucessful"
+            android:textColor="@color/originalgolden"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/gstno"
+            android:layout_width="168dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline84"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="@+id/guideline83"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/serialno"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Payment Id"
+            android:textColor="@color/lightwhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline83"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/comapnyname"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:text="Company Name"
+            android:textColor="@color/lightwhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline83"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serialno" />
+
+        <TextView
+            android:id="@+id/officename"
+            android:layout_width="168dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:text="SATWAY INFOSYSTEMS PVT LTD"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline84"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="@+id/guideline83"
+            app:layout_constraintTop_toBottomOf="@+id/gstno" />
+
+        <TextView
+            android:id="@+id/dealername"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:text="Dealer Name"
+            android:textColor="@color/lightwhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline83"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comapnyname" />
+
+        <TextView
+            android:id="@+id/dealernames"
+            android:layout_width="168dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline84"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="@+id/guideline83"
+            app:layout_constraintTop_toBottomOf="@+id/officename" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:text="Date"
+            android:textColor="@color/lightwhite"
+            app:layout_constraintEnd_toStartOf="@+id/guideline83"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dealername" />
+
+        <TextView
+            android:id="@+id/datePicker"
+            android:layout_width="168dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline84"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="@+id/guideline83"
+            app:layout_constraintTop_toBottomOf="@+id/dealernames" />
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="135dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/lgnbtn"
+            android:elevation="5dp"
+            android:text="save to pdf"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:layout_constraintVertical_bias="0.566" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="362dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline84"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#232E48"
+                    android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Items"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Quantity"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Price"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Total"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/shape"
+                    android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/device"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Device"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/quantityno"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/priceno"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/totalno"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/shape"
+                    android:padding="10dp">
+
+
+                        <TextView
+                            android:id="@+id/panicbtn"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Panic"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/quantitynos"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="25dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/pricenos"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/totalnos"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/shape"
+                    android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/granttotal"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/quantitynoss"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/corriar"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/granttotalnos"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                </TableRow>
+
+
+        </TableLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="-10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="178dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="384dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

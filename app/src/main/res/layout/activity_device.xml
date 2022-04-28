@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E1726"
+    android:onClick="hideKeybpard"
+    tools:context=".DeviceActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:text=" Device Activity"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline28"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="IMEI"
+
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline31"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline29"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/imeis"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif"
+        android:hint="Enter IMEI number"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="15dp"
+        android:maxLength="15"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="214dp"
+
+
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+
+        android:gravity="center"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <TextView
+        android:id="@+id/okposition"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+
+        android:layout_marginLeft="5dp"
+
+
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Last data Time"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="15dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Last Data Time"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView14"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:inputType="text"-->
+    <!--        android:paddingTop="14dp"-->
+    <!--        android:text="Last Data Time"-->
+    <!--        android:textAlignment="viewEnd"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="14dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline38"-->
+    <!--        app:layout_constraintHorizontal_bias="0.514"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline37" />-->
+
+
+    <ImageButton
+        android:id="@+id/imeiBtn"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:background="@drawable/layout"
+
+        android:onClick="onclick"
+        android:src="@drawable/click"
+        app:layout_constraintBottom_toBottomOf="@+id/imeis"
+        app:layout_constraintEnd_toEndOf="@+id/imeis"
+        app:layout_constraintTop_toTopOf="@+id/imeis" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:paddingTop="14dp"
+        android:text="BSNL SIM"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline33"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline32"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Primary number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline32"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:paddingTop="14dp"
+        android:text="V! Sim"
+        android:textAlignment="viewEnd"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline33" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Secondary number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline33"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Status"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline34"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="#0E1726"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline34"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Ignition\nStatus"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="  Sim \n Status"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/battery"
+        app:layout_constraintStart_toEndOf="@+id/textView102"
+        app:layout_constraintTop_toTopOf="@+id/battery" />
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView0"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView0"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView0"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView0"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="68dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint=" Battery\nStatus"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/guideline34" />
+
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Emergency"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline36"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="213dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:background="#0E1726"
+        app:layout_constraintBottom_toTopOf="@+id/guideline36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="107dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:text="ON"
+
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/oktilt"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/toggleButton2"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:text="OFF"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.32" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:singleLine="false"
+        android:text="                Fix Tilt /\n  Device  Position"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline36"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/oktilt"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline36"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Reboot"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline37"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView14"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:inputType="text"-->
+    <!--        android:paddingTop="14dp"-->
+    <!--        android:text="Last Data Time"-->
+    <!--        android:textAlignment="viewEnd"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="14dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        -->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline38"-->
+    <!--        app:layout_constraintHorizontal_bias="0.514"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline37" />-->
+
+
+    <Button
+        android:id="@+id/okreset"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline37"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/okposition"-->
+    <!--        android:layout_width="214dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:background="@drawable/btn4"-->
+    <!--        android:backgroundTint="@color/ex"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:gravity="center"-->
+    <!--        android:hint="Last data Time"-->
+    <!--        android:inputType="number"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textColorHint="@color/lightwhite"-->
+    <!--        android:textSize="15dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline17"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.013"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline38"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline37"-->
+    <!--        app:layout_constraintVertical_bias="0.071" />-->
+
+
+    <TextView
+        android:id="@+id/switchcommand"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="SIM Switch"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <TextView
+        android:id="@+id/currentsim"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:hint="Current SIM"
+        android:textColorHint="@color/lightwhite"
+        android:inputType="text"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/switchcommandbtn"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <Button
+        android:id="@+id/switchcommandbtn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+
+        app:layout_constraintEnd_toEndOf="@+id/okreset"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+
+    <TextView
+        android:id="@+id/systemupdate"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Firmware"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline18"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <TextView
+        android:id="@+id/locationTrans"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Location"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline18"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <TextView
+        android:id="@+id/firmwareversion"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:hint="Firmware Version"
+        android:inputType="text"
+        android:padding="10dp"
+
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightwhite"
+
+        android:textSize="14dp"
+
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintEnd_toStartOf="@+id/dummy"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+    <Button
+        android:id="@+id/systemupdatebtn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:text="UPDATE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:visibility="gone"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="75dp"
+        android:layout_height="19dp"
+        android:text=" "
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+
+
+    <Button
+        android:id="@+id/maptrans"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Map"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+    <ImageButton
+        android:id="@+id/imgtrans"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/ex"
+        android:elevation="2dp"
+
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="@+id/maptrans"
+        app:layout_constraintEnd_toEndOf="@+id/maptrans"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="@+id/maptrans"
+        app:srcCompat="@drawable/location" />
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:text="Location"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+
+
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/btn4"
+        android:backgroundTint="@color/ex"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Map"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+
+
+
+
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline42"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/ex"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:srcCompat="@drawable/location" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView101"-->
+    <!--        android:layout_width="65dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:background="@drawable/btn4"-->
+    <!--        android:backgroundTint="@color/ex"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:gravity="center"-->
+    <!--        android:hint="Status"-->
+    <!--        android:inputType="number"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textColorHint="@color/lightwhite"-->
+    <!--        android:textSize="15dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/view4"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView9"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/view4"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+
+
+
+
+
+    <!--1-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="2dp" />
+
+    <!--2-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.079166" />
+
+
+    <!--3-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15833" />
+    <!--4-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.237499" />
+    <!--5-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3166" />
+    <!--6-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.395888" />
+    <!--7-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47499" />
+    <!--8-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55416" />
+    <!--9-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6333" />
+    <!--10-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7124" />
+    <!--11  -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.79166" />
+    <!--12-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8708" />
+    <!--13-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9499" />
+    <!--14 vertical-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="125dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="systemupdatebtn"
+        tools:layout_editor_absoluteX="411dp" />
+
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/okposition"-->
+    <!--        android:layout_width="214dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:background="@drawable/btn4"-->
+    <!--        android:backgroundTint="@color/ex"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:gravity="center"-->
+    <!--        android:hint="Last data Time"-->
+    <!--        android:inputType="number"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textColorHint="@color/lightwhite"-->
+    <!--        android:textSize="15dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline17"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.013"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline38"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline37"-->
+    <!--        app:layout_constraintVertical_bias="0.071" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView14"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:fontFamily="sans-serif"-->
+    <!--        android:inputType="text"-->
+    <!--        android:paddingTop="14dp"-->
+    <!--        android:text="Last Data Time"-->
+    <!--        android:textAlignment="viewEnd"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="14dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline38"-->
+    <!--        app:layout_constraintHorizontal_bias="0.514"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline37" />-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:elevation="3dp"
+        android:visibility="gone"
+
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/golden"
+        android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/blur"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        app:cardBackgroundColor="@color/darkBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="6dp"
+        android:id="@+id/servererrordialog"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="20dp"
+        android:visibility="gone"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Server Is Not Responding...\n Please Try Again Later"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/serverdialogcancel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/serverdialogcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:background="@drawable/btn4"
+                android:backgroundTint="@color/ex"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.92" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
